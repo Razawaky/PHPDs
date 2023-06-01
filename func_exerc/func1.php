@@ -16,7 +16,7 @@ $hora_extra = $_POST['horas_extras'];
 
 function vendedor($nome, $salario, $vendas) {
     $comissao = 0.05; //Comissão 5% para vendas
-    $salario_total = $salario + ($vendas * $comissao);
+    $salario_total = $salario + ($vendas * $comissao );
 
     echo "Nome: " . $nome . "<br>";
     echo "Salário: " . $salario . "<br>";
@@ -37,5 +37,6 @@ function administrativos($adm_nome, $salario_fixo, $hora_extra) {
 }
 
 echo vendedor($nome, $salario, $vendas);
+echo "<br>";
 echo administrativos($adm_nome, $salario_fixo, $hora_extra);
 ?>
