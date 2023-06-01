@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
-<form action="func1.php" method="post">
-    Vendedor:
-    <input type="text" placeholder="Nome" name="nomevend"> 
-    <input type="number" name="salario" placeholder="Salário"> 
-    <input type="number" name="venda" placeholder="Vendas do Mês"> <br> <br>
-    <br>
-
-    Administrativo:
-    <input type="text" name="admin_nome" placeholder="Nome">
-    <input type="number" name="salario_fixo" placeholder="Salário Fixo">
-    <input type="number" name="horas_extras" placeholder="Horas Extras"><br>
-
-    <input type="submit" value="enviar">
-</form>
+   <div class="container">
+       <form action="func1.php" method="post">
+           <div class="vendedor">
+               <label for="VENDEDOR"> Vendedor:</label>
+               <input type="text" placeholder="Nome" name="nomevend"> 
+               <input type="number" name="salario" placeholder="Salário"> 
+               <input type="number" name="venda" placeholder="Vendas do Mês"> <br> <br>
+               <br>
+           </div>
+           <div class="administrativo">
+               Administrativo:
+               <input type="text" name="admin_nome" placeholder="Nome">
+               <input type="number" name="salario_fixo" placeholder="Salário Fixo">
+               <input type="number" name="horas_extras" placeholder="Horas Extras"><br>
+           
+               <input type="submit" value="enviar" id="enviar">
+           </div>
+       </form>
+   </div> 
 
 </body>
 </html>
